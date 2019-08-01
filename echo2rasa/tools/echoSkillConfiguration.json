@@ -1,0 +1,701 @@
+{
+    "interactionModel": {
+        "languageModel": {
+            "invocationName": "rasademo",
+            "intents": [
+                {
+                    "name": "request_restaurant",
+                    "samples": [
+                        "im looking for a restaurant",
+                        "can i get {cuisine} food in any area",
+                        "a restaurant that serves {cuisine} food",
+                        "id like a restaurant",
+                        "im looking for a restaurant that serves {cuisine} food",
+                        "can i find a restaurant that serves {cuisine}",
+                        "i am looking for any place that serves {cuisine} food for {num_people}",
+                        "i need to find a restaurant",
+                        "uh im looking for a restaurant that serves {cuisine} food",
+                        "uh can i find a restaurant and it should serve {cuisine} food",
+                        "im looking for a restaurant serving {cuisine} food",
+                        "restaurant please",
+                        "i'd like to book a table for {num_people} with {cuisine} cuisine",
+                        "i need a table for {num_people}",
+                        "book me a table for {num_people} at the {cuisine} restaurant",
+                        "can you please book a table for {num_people}",
+                        "I would like to book a table for {num_people}",
+                        "looking for a table at the {cuisine} restaurant for {num_people}",
+                        "find me a table for {num_people} people",
+                        "Can I get a table for {num_people} at the place which server {cuisine} food"
+                    ],
+                    "slots": [
+                        {
+                            "name": "num_people",
+                            "type": "AMAZON.NUMBER"
+                        },
+                        {
+                            "name": "cuisine",
+                            "type": "cuisine"
+                        }
+                    ]
+                },
+                {
+                    "name": "chitchat",
+                    "samples": [
+                        "can you share your boss with me",
+                        "i want to get to know your owner",
+                        "i want to know the company which designed you",
+                        "i want to know the company which generated you",
+                        "i want to know the company which invented you",
+                        "i want to know who invented you",
+                        "May I ask who invented you",
+                        "please tell me the company who created you",
+                        "please tell me who created you",
+                        "tell me more about your creators",
+                        "tell me more about your founders",
+                        "Ahoy matey how are you",
+                        "are you alright",
+                        "are you having a good day",
+                        "Are you ok",
+                        "are you okay",
+                        "Do you feel good",
+                        "how are things going",
+                        "how are things with you",
+                        "How are things",
+                        "how are you",
+                        "how are you doing",
+                        "how are you doing this morning",
+                        "how are you feeling",
+                        "how are you today",
+                        "How are you",
+                        "How is the weather today",
+                        "What's the weather like",
+                        "How is the weather",
+                        "What is the weather at your place",
+                        "Do you have good weather",
+                        "Is it raining",
+                        "What's it like out there",
+                        "Is it hot or cold",
+                        "Beautiful day isn't it",
+                        "What's the weather forecast",
+                        "Is it quite breezy outside"
+                    ]
+                },
+                {
+                    "name": "inform",
+                    "samples": [
+                        "{cuisine} food",
+                        "how bout {cuisine}",
+                        "what about {cuisine} food",
+                        "uh how about {cuisine} type of food",
+                        "um {cuisine}",
+                        "im looking for {cuisine} food",
+                        "id like {cuisine} food",
+                        "{cuisine}",
+                        "{cuisine} food",
+                        "serves {cuisine} food",
+                        "id like {cuisine}",
+                        "serving {cuisine} food",
+                        "um what about {cuisine} food",
+                        "im looking for {cuisine} food",
+                        "im looking for {cuisine} food",
+                        "serves {cuisine} food",
+                        "how about {cuisine} food",
+                        "can i get {cuisine} food",
+                        "{cuisine} food",
+                        "{cuisine} food",
+                        "{cuisine} food",
+                        "how bout one that serves {cuisine} food and is cheap",
+                        "{cuisine}",
+                        "{cuisine} food",
+                        "im looking for {cuisine} food",
+                        "serves {cuisine} food",
+                        "{cuisine}",
+                        "i want {cuisine} food",
+                        "how about {cuisine} type of food",
+                        "it should serve {cuisine} food",
+                        "how {cuisine}",
+                        "how about {cuisine} food",
+                        "serves {cuisine} food",
+                        "{cuisine} food",
+                        "{cuisine}",
+                        "serves {cuisine}",
+                        "i would like {cuisine} food",
+                        "looking for {cuisine} food",
+                        "{cuisine}",
+                        "{cuisine}",
+                        "i want {cuisine} food",
+                        "id like {cuisine}",
+                        "i want to find {cuisine} food",
+                        "{cuisine}",
+                        "{cuisine} food",
+                        "how about {cuisine}",
+                        "hi im looking for {cuisine} food",
+                        "how about {cuisine} type of food",
+                        "{cuisine} food",
+                        "{cuisine}",
+                        "instead could it be for {num_people} people",
+                        "any {cuisine} food",
+                        "what about {cuisine} food",
+                        "how about {cuisine} food",
+                        "im looking for {cuisine} food",
+                        "im looking for {cuisine} food",
+                        "im looking for {cuisine} food",
+                        "serving {cuisine} food",
+                        "serving {cuisine}",
+                        "is there {cuisine} food",
+                        "{cuisine} food",
+                        "im looking for something serves {cuisine} food",
+                        "id like a {cuisine}",
+                        "im looking for {cuisine} food",
+                        "i want to find {cuisine} food",
+                        "serves {cuisine} food",
+                        "looking for {cuisine} food",
+                        "that serves {cuisine} food",
+                        "{cuisine} food",
+                        "{cuisine} food",
+                        "{cuisine}",
+                        "{cuisine}",
+                        "serving {cuisine} food",
+                        "how about {cuisine}",
+                        "looking for {cuisine} food in the center of town",
+                        "it should serve {cuisine} food",
+                        "{cuisine} food",
+                        "i want {cuisine} food",
+                        "im looking for {cuisine} food",
+                        "um how about {cuisine} food",
+                        "{cuisine} food",
+                        "can i have a {cuisine} please",
+                        "how about {cuisine} food",
+                        "how about {cuisine}",
+                        "{cuisine} food",
+                        "{cuisine}",
+                        "{cuisine} food",
+                        "what about {cuisine}",
+                        "how about {cuisine} food",
+                        "serving {cuisine} food",
+                        "{cuisine} food",
+                        "how about uh {cuisine}",
+                        "im looking for {cuisine} food",
+                        "im looking for {cuisine} food",
+                        "im looking for {cuisine} food",
+                        "{cuisine} food",
+                        "how about {cuisine} food",
+                        "im looking for {cuisine} food",
+                        "{cuisine}",
+                        "a restaurant serving {cuisine} food",
+                        "im looking for {cuisine} food",
+                        "{cuisine} food",
+                        "a restaurant with {cuisine} food",
+                        "im looking for {cuisine} food",
+                        "uh i want {cuisine} food",
+                        "im looking for {cuisine}",
+                        "i want to seat {seating}",
+                        "i want to seat {seating}",
+                        "i want to seat {seating}",
+                        "i want to seat {seating}",
+                        "let's go {seating}",
+                        "{seating}",
+                        "{seating}",
+                        "prefer sitting {seating}",
+                        "I would like to seat {seating} please",
+                        "I prefer sitting {seating}",
+                        "my feedback is {feedback}",
+                        "my feedback is {feedback}",
+                        "it was {feedback}",
+                        "i consider it {feedback}",
+                        "you are {feedback}",
+                        "for {num_people} people",
+                        "{num_people} people",
+                        "for {num_people} people",
+                        "just {num_people} person",
+                        "book for {num_people} people",
+                        " please",
+                        "{num_people} people"
+                    ],
+                    "slots": [
+                        {
+                            "name": "seating",
+                            "type": "seating"
+                        },
+                        {
+                            "name": "num_people",
+                            "type": "AMAZON.NUMBER"
+                        },
+                        {
+                            "name": "cuisine",
+                            "type": "cuisine"
+                        },
+                        {
+                            "name": "feedback",
+                            "type": "feedback"
+                        }
+                    ]
+                },
+                {
+                    "name": "affirm",
+                    "samples": [
+                        "yeah a cheap restaurant serving international food",
+                        "correct",
+                        "ye",
+                        "uh yes",
+                        "let's do it",
+                        "yeah",
+                        "uh yes",
+                        "um yes",
+                        "yes knocking",
+                        "that's correct",
+                        "yes yes",
+                        "right",
+                        "yea",
+                        "yes",
+                        "yes right",
+                        "yes and i dont care",
+                        "right on",
+                        "i love that"
+                    ]
+                },
+                {
+                    "name": "deny",
+                    "samples": [
+                        "no",
+                        "no new selection",
+                        "no thanks",
+                        "no thank you",
+                        "uh no",
+                        "breath no",
+                        "do you have something else",
+                        "no this does not work for me"
+                    ]
+                },
+                {
+                    "name": "stop",
+                    "samples": [
+                        "ok then you cant help me",
+                        "that was shit you're not helping",
+                        "you can't help me",
+                        "you can't help me with what i need",
+                        "i guess you can't help me then",
+                        "ok i guess you can't help me",
+                        "that's not what i want",
+                        "ok but that doesnt help me",
+                        "this is leading to nothing",
+                        "this conversation is not really helpful",
+                        "you cannot help me with what I want",
+                        "I think you cant help me",
+                        "hm i don't think you can do what i want",
+                        "stop",
+                        "stop go back",
+                        "do you get anything",
+                        "and you call yourself bot company pff",
+                        "and that's it",
+                        "nothing else"
+                    ]
+                },
+                {
+                    "name": "thankyou",
+                    "samples": [
+                        "um thank you good bye",
+                        "okay cool uh good bye thank you",
+                        "okay thank you good bye",
+                        "you rock",
+                        "and thats all thank you and good bye",
+                        "thank you and good bye",
+                        "sorry about my mistakes thank you good bye",
+                        "noise thank you good bye",
+                        "thank you goodbye noise",
+                        "okay thank you goodbye",
+                        "uh thank you good bye",
+                        "thank you goodbye",
+                        "thank you goodbye noise thank you goodbye",
+                        "breath thank you goodbye",
+                        "thank you",
+                        "okay thank you",
+                        "thanks goodbye",
+                        "ah thank you goodbye",
+                        "thank you noise",
+                        "thank you good bye",
+                        "breath thank you very much goodbye",
+                        "thanks",
+                        "noise thank you goodbye",
+                        "unintelligible thank you goodbye",
+                        "uh okay thank you good bye",
+                        "thank you bye",
+                        "um okay thank you good bye"
+                    ]
+                },
+                {
+                    "name": "greet",
+                    "samples": [
+                        "Hi",
+                        "Hey",
+                        "Hi bot",
+                        "Hey bot",
+                        "Hello",
+                        "Good morning",
+                        "hi again",
+                        "hi folks",
+                        "hi Mister",
+                        "hi pal",
+                        "hi there",
+                        "greetings",
+                        "hello everybody",
+                        "hello is anybody there",
+                        "hello robot",
+                        "hallo",
+                        "heeey",
+                        "hi hi",
+                        "hey",
+                        "hey hey",
+                        "hello there",
+                        "hi",
+                        "hello",
+                        "yo",
+                        "hola",
+                        "hi",
+                        "hey bot",
+                        "hello friend"
+                    ]
+                }
+            ],
+            "types": [
+                {
+                    "name": "cuisine",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "swedish"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "caribbean"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "mediterranean"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "chinese"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "indonesian"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "kosher"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "brazilian"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "italian"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "spanish"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "mexican"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "greek"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "afghan"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "asian oriental"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "indian"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "turkish"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "english"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "tuscan"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "moroccan"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "seafood"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "french"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "british"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "canapes"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "jamaican"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "corsica"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "world"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "irish"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "portuguese"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "german"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "korean"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "romanian"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "gastropub",
+                                "synonyms": [
+                                    "gastro pub"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "modern european"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "scandinavian"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "european"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "traditional"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "lebanese"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "polish"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "thai"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "scottish"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "vietnamese"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "polynesian"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "japanese"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "belgian"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "malaysian"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "asian",
+                                "synonyms": [
+                                    "pan asian",
+                                    "asian oriental"
+                                ]
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "russian"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "basque"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "welsh"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "vegetarian"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "creative"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "unusual"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "danish"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "cantonese"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "seating",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "outside"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "inside"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "outdoor"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "indoor"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "indoors"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "name": "feedback",
+                    "values": [
+                        {
+                            "name": {
+                                "value": "good"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "great"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "terrible"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "success"
+                            }
+                        },
+                        {
+                            "name": {
+                                "value": "awful"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

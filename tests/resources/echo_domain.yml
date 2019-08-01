@@ -1,0 +1,9 @@
+slots:
+  cuisine:
+    type: cuisine
+  num_people:
+    type: AMAZON.NUMBER
+  seating:
+    type: seating
+  feedback:
+    type: feedback

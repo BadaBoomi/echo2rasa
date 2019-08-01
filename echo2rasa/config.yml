@@ -1,0 +1,16 @@
+# Configuration for Rasa NLU - use echo2rasa mapping
+# https://rasa.com/docs/rasa/nlu/components/
+language: en
+pipeline:
+    - name: echoconnector.EchoNLUMapper
+
+# Configuration for Rasa Core.
+# https://rasa.com/docs/rasa/core/policies/
+policies:
+  - name: FallbackPolicy
+  - name: MemoizationPolicy
+  - name: FormPolicy
+  - name: MappingPolicy
+ 
+
+
