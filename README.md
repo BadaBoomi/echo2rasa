@@ -1,13 +1,37 @@
-- [echo2rasa](#echo2rasa)
-  * [Setup and installation](#setup-and-installation)
-  * [Example skill](#example-skill)
-  * [NLU Interpreter](#nlu-interpreter)
-  * [What's in this repository](#what-s-in-this-repository)
-  * [How to use this repository](#how-to-use-this-repository)
-  * [Let us know how you are getting on!](#let-us-know-how-you-are-getting-on-)
+# Table of contents
+
+- [Introduction](#introduction)
+- [Python](#python)
+- [Rasa](#rasa)
+- [Example Skill](#example-skill)
+- [Setup](#setup)
+  * [config.yml](#configyml)
+  * [echoconnector.py](#echoconnectorpy)
+    + [EchoConnector](#echoconnector)
+    + [EchoNLUMapper](#echonlumapper)
+- [Configurations](#configurations)
+  * [credentials.yml](#credentialsyml)
+- [Train and test the model without Echo support (optional)](#train-and-test-the-model-without-echo-support--optional-)
+  * [Setup Duckling](#setup-duckling)
+- [Train the model for Alexa/Echo usage](#train-the-model-for-alexa-echo-usage)
+- [Start the service](#start-the-service)
+  * [start_echo_service.bat](#start-echo-servicebat)
+    + [Test Service Locally](#test-service-locally)
+  * [Expose Service (ngrok)](#expose-service--ngrok-)
+    + [Test Service via Internet](#test-service-via-internet)
+- [Setup Alexa Skill](#setup-alexa-skill)
+  * [Generate JSON Configuration](#generate-json-configuration)
+    + [echo_domain.yml](#echo-domainyml)
+    + [genEchoDefinition](#genechodefinition)
+      - [Default parameter values](#default-parameter-values)
+  * [Create new Alexa Skill](#create-new-alexa-skill)
+  * [Test Your Skill](#test-your-skill)
+- [Next Steps](#next-steps)
+- [License](#license)
+  * [echo2rasa module and according configuration parts](#echo2rasa-module-and-according-configuration-parts)
+  * [RASA and used form bot examples](#rasa-and-used-form-bot-examples)
 
 <small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
-
 
 # Introduction
 
@@ -183,7 +207,7 @@ The result will be something like the following.
 # Next Steps
 This project provides the technical breakthrough to use Rasa for Alexa/Echo skills. It is however far from beeing complete. As a next improvement the ability to define Alexa/Echo specific utterance annotations (e.g. to give additional utterances for the user reprompting).
 
-#License#
+# License
 ## echo2rasa module and according configuration parts
 Copyright 2019 HeiooDo
 
