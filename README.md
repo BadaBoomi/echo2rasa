@@ -93,26 +93,26 @@ To run the example skill without Alexa/Echo nlu recognition, the Duckling librar
 # Train the model for Alexa/Echo usage
 Before we may start the service, we have to train the core model. Training of nlu is also necessary even if the actual nlu will be performed on Alexa side. Training is performed by [train_echo_model.bat](train_echo_model.bat)
 
-![Training the model](.\echo2rasa\resource\trainRasa.jpg?raw=true)
+![Training the model](https://github.com/BadaBoomi/echo2rasa/blob/master/echo2rasa/resource/trainRasa.jpg)
 
 # Start the service
 ## start_echo_service.bat
 [start_echo_service.bat](start_echo_service.bat) starts the action server and the echo connector service.
 
-![Start Service](.\echo2rasa\resource\startService.jpg?raw=true)
+![Start Service](https://github.com/BadaBoomi/echo2rasa/blob/master/echo2rasa/resource/startService.jpg)
 ### Test Service Locally
 Within browser or via curl you may perform local test of service.
 ~~~
 http://localhost:5005/webhooks/echo
 ~~~
-C:\Users\Heiko\PY_PROJECTS\rasa\echodemo\echo2rasa\resource\test_localservice.![Local test](.\echo2rasa\resource\test_localservice.jpg?raw=true)
+C:\Users\Heiko\PY_PROJECTS\rasa\echodemo\echo2rasa\resource\test_localservice.![Local test](https://github.com/BadaBoomi/echo2rasa/blob/master/echo2rasa/resource/test_localservice.jpg)
 
 ## Expose Service (ngrok)
 For testing purposes the newly created service will be exposed via [ngrok](https://ngrok.com/download "Download ngrok")
 ~~~
 ngrok http -host-header="localhost:5005" 5005
 ~~~
-![ngrok Service](.\echo2rasa\resource\ngrokStart.jpg?raw=true)
+![ngrok Service](https://github.com/BadaBoomi/echo2rasa/blob/master/echo2rasa/resource/ngrokStart.jpg)
 
 To use as Alexa service endpoint use the ssl securede https endpoint (i.e. https://c3110a33.ngrok.io)
 
@@ -121,7 +121,7 @@ Within browser or via curl you may perform internet test of service.
 ~~~
 https://a97ed28f.ngrok.io/webhooks/echo
 ~~~
-C:\Users\Heiko\PY_PROJECTS\rasa\echodemo\echo2rasa\resource\test_localservice.![Local test](.\echo2rasa\resource\test_ngrok.jpg?raw=true)
+C:\Users\Heiko\PY_PROJECTS\rasa\echodemo\echo2rasa\resource\test_localservice.![Local test](https://github.com/BadaBoomi/echo2rasa/blob/master/echo2rasa/resource/test_ngrok.jpg)
 
 # Setup Alexa Skill
 ## Generate JSON Configuration
@@ -171,38 +171,38 @@ The script will generate the Alexa/Echo configuration within file [echoSkillConf
 
 ## Create new Alexa Skill
 On the Alexa developper side https://developer.amazon.com/alexa/console/ask choose "Create Skill" to create a new skill.
-![Create new Alexa Skill](.\echo2rasa\resource\echo_createSkill.jpg?raw=true)
+![Create new Alexa Skill](https://github.com/BadaBoomi/echo2rasa/blob/master/echo2rasa/resource/echo_createSkill.jpg)
 
 Choose custom model and provisioning of own service.
-![Type of model and provisioning](.\echo2rasa\resource\echo_skillType.jpg?raw=true)
+![Type of model and provisioning](https://github.com/BadaBoomi/echo2rasa/blob/master/echo2rasa/resource/echo_skillType.jpg)
 
 Choose "Start from scratch" as your template.
-![Choose template "From Scratch"](.\echo2rasa\resource\echo_skillType_2.jpg?raw=true)
+![Choose template "From Scratch"](https://github.com/BadaBoomi/echo2rasa/blob/master/echo2rasa/resource/echo_skillType_2.jpg)
 
 Do not perform any manual configurations but go directly to the json editor.
-![Open json editor](.\echo2rasa\resource\echo_configuration_json.jpg?raw=true)
+![Open json editor](https://github.com/BadaBoomi/echo2rasa/blob/master/echo2rasa/resource/echo_configuration_json.jpg)
 
 Paste the content of the generated configuration file [echoSkillConfiguration.json](./echo2rasa/tools/echoSkillConfiguration.json) into the json editor and press "Build Model".
 
-![Paste json configuration and build](.\echo2rasa\resource\echo_configuration_build.jpg?raw=true)
+![Paste json configuration and build](https://github.com/BadaBoomi/echo2rasa/blob/master/echo2rasa/resource/echo_configuration_build.jpg)
 
 Your model will be saved and build. After the successfull build you will be informed with a corresponding message.
 
 Now configure your endpoint. This will be the ngrok exposed https port of your local machine (e.g. https://e7f679dc.ngrok.io/webhooks/echo/).
-![Choose Endpoint](.\echo2rasa\resource\echo_configure_endpoint.jpg?raw=true)
+![Choose Endpoint](https://github.com/BadaBoomi/echo2rasa/blob/master/echo2rasa/resource/echo_configure_endpoint.jpg)
 
 
-![Configure Endpoint](.\echo2rasa\resource\echo_configure_endpoint_2.jpg?raw=true)
+![Configure Endpoint](https://github.com/BadaBoomi/echo2rasa/blob/master/echo2rasa/resource/echo_configure_endpoint_2.jpg)
 
 ## Test Your Skill
 Go to the Alexa test page and enable testing of your skill.
-![Enable skill testing](.\echo2rasa\resource\echo_test.jpg?raw=true)
+![Enable skill testing](https://github.com/BadaBoomi/echo2rasa/blob/master/echo2rasa/resource/echo_test.jpg)
 
 Invoke your skill
-![Invoke your skill](.\echo2rasa\resource\echo_dialog_01.jpg?raw=true)
+![Invoke your skill](https://github.com/BadaBoomi/echo2rasa/blob/master/echo2rasa/resource/echo_dialog_01.jpg)
 
 The result will be something like the following.
-![Example dialogue](.\echo2rasa\resource\echo_dialog_02.jpg?raw=true)
+![Example dialogue](https://github.com/BadaBoomi/echo2rasa/blob/master/echo2rasa/resource/echo_dialog_02.jpg)
 
 # Next Steps
 This project provides the technical breakthrough to use Rasa for Alexa/Echo skills. It is however far from beeing complete. As a next improvement the ability to define Alexa/Echo specific utterance annotations (e.g. to give additional utterances for the user reprompting).
